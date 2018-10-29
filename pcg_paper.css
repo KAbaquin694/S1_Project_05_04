@@ -13,3 +13,90 @@
    Supporting Files: 
 
 */
+
+html {
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 960px;
+    min-height: 640px;
+    background-color: rgb(43, 71, 131);
+}
+
+body {
+    margin: auto;
+    width: 90%;
+    background-color: rgb(103, 103, 128);
+}
+
+div {
+    color: rgb(26, 42, 78);
+}
+
+h2 {
+    color: rgb(14, 25, 46);
+}
+
+div#story1 {
+    font-size: .9em;
+    display: block;
+    float: left;
+    width: 50%;
+    padding-left: 2em;
+    /* clear: both; */
+}
+
+div#story2 {
+    font-size: .9em;
+    display: block;
+    float: right;
+    width: 50%;
+    padding-right: 2em;
+}
+
+div#story3 {
+    font-size: .9em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#story4 {
+    font-size: .9em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: beige;
+}
+
+nav ul li a:hover {
+    color: rgb(146, 133, 114);
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav.verticalNavigation {
+    display: block;
+    float: left;
+}
+
+nav#horizontalNavigation ul li {
+    display: block;
+    float: left;
+    width: 12%;
+    background-color: red;
+}
+
+
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    font-family: cursive;
+}
+
+footer {
+    text-align: center;
+    color: beige;
+}
