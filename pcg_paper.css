@@ -19,12 +19,13 @@ html {
     margin-right: auto;
     max-height: 960px;
     min-height: 640px;
-    background-color: rgb(43, 71, 131);
+    /* background-color: rgb(43, 71, 131); */
+    background-color: rgb(29, 44, 78);
 }
 
 body {
     margin: auto;
-    width: 90%;
+    width: 95%;
     background-color: rgb(103, 103, 128);
 }
 
@@ -79,15 +80,22 @@ nav ul li {
 nav.verticalNavigation {
     display: block;
     float: left;
+    /* clear: both; */
 }
 
 nav#horizontalNavigation ul li {
     display: block;
     float: left;
     width: 12%;
-    background-color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: grey;
+    text-align: center;
 }
 
+nav#horizontalNavigation ul li:hover {
+    background-color: rgb(90, 85, 85);
+}
 
 
 h1 {
@@ -99,4 +107,6 @@ h1 {
 footer {
     text-align: center;
     color: beige;
+    padding: 1.5px;
+    background-color: rgb(58, 75, 112);
 }
