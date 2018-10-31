@@ -17,15 +17,17 @@
 html {
     margin-left: auto;
     margin-right: auto;
-    max-height: 960px;
-    min-height: 640px;
+
     /* background-color: rgb(43, 71, 131); */
     background-color: rgb(29, 44, 78);
 }
 
 body {
     margin: auto;
-    width: 95%;
+    max-width: 960px;
+    min-width: 640px;
+    width: 80%;
+    height: 100%;
     background-color: rgb(103, 103, 128);
 }
 
@@ -34,34 +36,85 @@ div {
 }
 
 h2 {
+    margin: auto;
     color: rgb(14, 25, 46);
 }
 
+div {
+    margin: 2em;
+    font-size: 1.1em;
+}
+
 div#story1 {
-    font-size: .9em;
     display: block;
     float: left;
     width: 50%;
     padding-left: 2em;
-    /* clear: both; */
+}
+
+div#story1::after {
+    clear: both;
+    content: “”;
+    display: table;
 }
 
 div#story2 {
-    font-size: .9em;
+    display: block;
+    float: left;
+    width: 50%;
+    padding-left: 2em;
+}
+
+div#story2::after {
+    clear: both;
+    content: “”;
+    display: table;
+}
+
+div#story3 {
     display: block;
     float: right;
     width: 50%;
     padding-right: 2em;
 }
 
-div#story3 {
-    font-size: .9em;
+div#story3::after {
+    clear: both;
+    content: “”;
+    display: table;
+}
+
+/* div#story3 {
+    display: block;
+    height: 50%;
+    width: 50%;
+    padding-right: 2em;
+}
+
+div#story3::after {
+    clear: both;
+    content: "";
+    display: table;
+} */
+
+
+div#story4 {
     margin-left: auto;
     margin-right: auto;
 }
 
-div#story4 {
-    font-size: .9em;
+div#story4::after {
+    clear: both;
+    content: “”;
+    display: table;
+}
+
+div#story4 h2::after {
+    float: left;
+    clear: both;
+    content: “”;
+    display: table;
+
 }
 
 nav ul li a {
@@ -69,7 +122,7 @@ nav ul li a {
     color: beige;
 }
 
-nav ul li a:hover {
+footer#nav nav ul li a:hover {
     color: rgb(146, 133, 114);
 }
 
@@ -79,7 +132,8 @@ nav ul li {
 
 nav.verticalNavigation {
     display: block;
-    float: left;
+    width: 80%;
+    float: right;
     /* clear: both; */
 }
 
@@ -104,9 +158,35 @@ h1 {
     font-family: cursive;
 }
 
-footer {
+/* footer#bottom {
     text-align: center;
     color: beige;
     padding: 1.5px;
     background-color: rgb(58, 75, 112);
+}
+
+footer#nav {
+    line-height: 1.5em;
+    float: left;
+} */
+
+footer {
+    clear: left;
+    background-color: rgb(71, 52, 29);
+}
+
+footer::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+footer>nav#nav {
+    float: left;
+    width: 22%;
+}
+
+footer>section#contactInfo {
+    float: left;
+    width: 34%;
 }
