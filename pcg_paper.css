@@ -14,10 +14,15 @@
 
 */
 
+/* UNFINISHED */
+
+ /* Main */
+
+/* This block of code styles the entire webpage, background color, height, width & such. */
+
 html {
     margin-left: auto;
     margin-right: auto;
-
     /* background-color: rgb(43, 71, 131); */
     background-color: rgb(29, 44, 78);
 }
@@ -30,9 +35,19 @@ body {
     height: 100%;
     background-color: rgb(103, 103, 128);
 }
+ 
+/* Content */
+
+/* This section styles all of the divs, headings, & the content within the div elements. */
 
 div {
     color: rgb(26, 42, 78);
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    font-family: cursive;
 }
 
 h2 {
@@ -117,25 +132,26 @@ div#story4 h2::after {
 
 }
 
+/* Nav Bars */
+
+/* This part of the code takes care of styling the top navigation bar & its links. */
+
 nav ul li a {
     text-decoration: none;
     color: beige;
-}
-
-footer#nav nav ul li a:hover {
-    color: rgb(146, 133, 114);
 }
 
 nav ul li {
     list-style: none;
 }
 
-nav.verticalNavigation {
-    display: block;
-    width: 80%;
-    float: right;
-    /* clear: both; */
-}
+/* nav.verticalNavigation>ul.left {
+    margin-right: 100px;
+} */
+
+/* Footer */
+
+/* This block of code styles the two footers, one has four separate navigation bars & the other is the normal footer. */
 
 nav#horizontalNavigation ul li {
     display: block;
@@ -151,42 +167,57 @@ nav#horizontalNavigation ul li:hover {
     background-color: rgb(90, 85, 85);
 }
 
-
-h1 {
-    font-size: 4em;
-    text-align: center;
-    font-family: cursive;
+nav.verticalNavigation {
+    display: block;
+    width: 80%;
+    float: right;
 }
 
-/* footer#bottom {
+nav.verticalNavigation>ul.right {
+    float: right;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+footer#nav nav ul li a:hover {
+    color: rgb(146, 133, 114);
+}
+
+footer#bottom {
     text-align: center;
     color: beige;
     padding: 1.5px;
-    background-color: rgb(58, 75, 112);
+    background-color: rgb(66, 85, 128);
+    clear: both;
 }
 
 footer#nav {
-    line-height: 1.5em;
+    line-height: 1.7em;
     float: left;
-} */
-
-footer {
-    clear: left;
-    background-color: rgb(71, 52, 29);
+    /* clear: left; */
+    background-color: rgb(103, 103, 128);
 }
 
-footer::after {
+footer#nav::after {
     clear: both;
     content: "";
     display: table;
 }
 
-footer>nav#nav {
+
+/* ul.right {
+    float: right;
+} */
+
+/* ul.right::after {
+    clear: both;
+    content: “”;
+    display: table;
+} */
+
+/* footer>nav#nav {
     float: left;
     width: 22%;
-}
-
-footer>section#contactInfo {
-    float: left;
-    width: 34%;
-}
+} */
